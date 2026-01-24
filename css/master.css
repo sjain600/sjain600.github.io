@@ -1,6 +1,16 @@
 /* Cascading stylesheet for the website */
 
 /* Text inside these asterisks and slashes are comments for human */
+  :root{
+  --bg-1: #0f1116;     /* deep base */
+  --bg-2: #191a22;     /* panel/card */
+  --grid-line: rgba(95,115,255,0.06); /* subtle tech grid */
+  --accent-cyan: #00e0ff;
+  --accent-magenta: #ff6ec7;
+  --accent-h1: #c68aff; /* soft neon purple for H1 */
+  --muted: #cbd5e1;
+  --card: #21232b;
+}
 
   a {
     color: #075AAB; /* set the text color to blue here */
