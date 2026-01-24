@@ -80,8 +80,7 @@
     width: 48px;
     height: 4px;
     margin: 0.5rem auto 0;
-    background: linear-gradient(90deg, #FEFAE0, #588157);
-    color: #1ABC9C;
+    background: #1ABC9C;
   }
 
   h3 {
