@@ -1,15 +1,25 @@
 /* Cascading stylesheet for the website */
 
 /* Text inside these asterisks and slashes are comments for human */
-  :root{
-  --bg-1: #0f1116;     /* deep base */
-  --bg-2: #191a22;     /* panel/card */
-  --grid-line: rgba(95,115,255,0.06); /* subtle tech grid */
-  --accent-cyan: #00e0ff;
-  --accent-magenta: #ff6ec7;
-  --accent-h1: #c68aff; /* soft neon purple for H1 */
-  --muted: #cbd5e1;
-  --card: #21232b;
+:root{
+  /* background + panels */
+  --bg-1: #0a0a10;     /* near-black base */
+  --bg-2: #15151b;     /* card/panel */
+  --surface: #20222a;
+
+  /* primary neon accents */
+  --accent-magenta: #FF007A; /* primary energy */
+  --accent-teal:    #00F5D4; /* secondary data/tech */
+  --accent-blue:    #4A90E2; /* tertiary link */
+  --accent-orange:  #F5A623; /* warnings */
+
+  /* text */
+  --text: #E0E0E0;
+  --muted: #9AA0A6;
+
+  /* layout */
+  --max-width: 1100px;
+  --wrap-padding: 1rem;
 }
 
   a {
