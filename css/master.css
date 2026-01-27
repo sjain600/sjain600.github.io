@@ -35,6 +35,37 @@ body {
   text-rendering: optimizeLegibility;
    }
 
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 12% 10%, rgba(255,0,122,0.06), transparent 12%),
+    radial-gradient(circle at 90% 80%, rgba(0,245,212,0.035), transparent 8%);
+  pointer-events: none;
+  mix-blend-mode: screen;
+  z-index:0;
+   }
+
+body::after{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: 
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  pointer-events: none;
+  background-size: 48px 48px;
+  opacity: 0.06;
+  z-index:0;
+  animation: grid-scroll 24s linear infinite;
+}
+
+@keyframes grid-scroll {
+  from { background-position: 0 0, 0 0; }
+  to   { background-position: 48px 48px, 48px 48px; }
+}
+
   a {
     color: #075AAB; /* set the text color to blue here */
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
@@ -60,16 +91,6 @@ body {
     text-decoration: none; /* This means we do not want hyperlinks to be underlined */
   }
 
-  
-
-   body::before{
-     content: "";
-     position: fixed;
-     inset: 0;
-     background: radial-gradient(circle at top left,rgba(26, 188, 156, 0.08), transparent 65%),
-     radial-gradient(circle at 90% 80%, rgba(204, 213, 174, 0.085), transparent 70%);
-    pointer-events: none;
-   }
 
   footer {
     margin-top: 2rem;
