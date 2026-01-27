@@ -4,67 +4,185 @@
 
 <html lang="en">
 
-  <header>
-    <title>Shubham Jain's Resume</title>
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="FaviconIcon" href="favicon.ico", type="image/x=icons">
-    <link rel='shortcut' href="favicon.ico", type="image/x=icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="name" content="Shubham Jain's Portal">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shubham Jain — Resume</title>
+
+  <!-- Same fonts used on the main site (serif heading + Inter body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- same CSS theme -->
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header class="site header">
+    <div class="wrap header-inner">
+      <div class="brand">Shubham Jain</div>
+
+      <nav class="main-nav" aria-label="Resume navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a class="button solid" href="resume.pdf" download>Download PDF</a>
+      </div>
+    </div>
+    <div class="header-underline"></div>
   </header>
 
-  <body>
-    <hr>
+  <!-- ===== Main Resume Content ===== -->
+  <main class="wrap" role="main">
 
-    <img src="images/headshot.jpg" alt="Shubham Jain's headshot" width="20%">
+    <section class="card resume-hero" style="display:flex;gap:1.2rem;align-items:center;">
+      <img
+        src="images/banner.jpg"
+        alt="Shubham Jain portrait"
+        class="avatar"
+        style="width:120px;height:120px;"
+      >
 
-    <h1>Shubham Jain</h1>
-    <h4>Aspiring Data Scientist | Self-taught Python & ML</h4>
+      <div>
+        <h1>Shubham Jain</h1>
+        <p class="meta">
+          Aspiring Data Scientist | Self-taught Python, SQL & ML
+        </p>
 
-    <p>Email: <a href="mailto:jain.shubh600@gmail.com target="_blank">jain.shubh600@gmail.com</a></p>
-    <!-- don't post physical address, personal phone number or other personal information on the web! -->
+        <div style="margin-top:0.6rem;">
+          <a class="button solid" href="resume.pdf" download>Download PDF</a>
+          <a class="button hollow" href="index.html">Back to Portfolio</a>
+        </div>
+      </div>
+    </section>
 
-    <h2>Portfolio</h2>
-      <h3>GitHub: <a href="https://github.com/sjain600" target="_blank">https://github.com/sjain600</a></h3>
+    <section class="card">
+      <h2>Professional Summary</h2>
+      <p>
+        Data-driven analyst transitioning from accounting into data science.
+        Strong foundation in Python, SQL, exploratory data analysis, and machine
+        learning fundamentals. Experienced in building end-to-end analytical
+        workflows and communicating insights clearly to non-technical audiences.
+      </p>
+    </section>
 
-    <h2>Education</h2>
+    <section id="experience" class="card">
+      <h2>Professional Experience</h2>
 
-    <h3>University of Prince Edward Island, Charlottetown, PEI</h3>
-    <h4>Bachelor of Business Administration, Accounting</h4>
+      <article class="card">
+        <header style="display:flex;justify-content:space-between;align-items:flex-start;">
+          <div>
+            <h3>Competition Contributor</h3>
+            <p class="meta">Kaggle · Remote</p>
+          </div>
+          <div class="meta">Apr 2025 – Present</div>
+        </header>
 
-    <h2>Professional Experiences</h2>
+        <ul>
+          <li>Built and evaluated machine learning models including gradient boosting and neural networks.</li>
+          <li>Performed exploratory data analysis to identify patterns and feature relationships.</li>
+          <li>Designed end-to-end pipelines covering preprocessing, modeling, and validation.</li>
+        </ul>
+      </article>
 
-    <h3>Competition Contributor</h3>
-    <h4>Kaggle, Remote</h4>
-    <h5>April 2025 - Present</h5>
+
+      <article class="card">
+        <header style="display:flex;justify-content:space-between;align-items:flex-start;">
+          <div>
+            <h3>Accounting Analyst</h3>
+            <p class="meta">Industry Experience</p>
+          </div>
+          <div class="meta">2021 – 2024</div>
+        </header>
+
+        <ul>
+          <li>Analyzed financial data to support reporting, forecasting, and variance analysis.</li>
+          <li>Worked with large datasets requiring accuracy, reconciliation, and validation.</li>
+          <li>Developed strong attention to detail and quantitative reasoning.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="skills" class="card section-tech">
+      <h2>Skills & Tools</h2>
+
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">Pandas</span>
+        <span class="chip">NumPy</span>
+        <span class="chip">SQL</span>
+        <span class="chip">scikit-learn</span>
+        <span class="chip">Tableau</span>
+        <span class="chip">Git</span>
+        <span class="chip">Jupyter</span>
+      </div>
+    </section>
+
+
+    <section class="card">
+      <h2>Selected Projects</h2>
+
       <ul>
-        <li>Train gradient boosting models and neural networks</li>
-        <li>Built end-to-end ML pipelines for tabular dataset</li>
-        <li>Produced EDA and data visualziation to gain insights and feature selection</li>
+        <li>
+          <strong>Sales Forecasting Model:</strong>
+          Built a time-series forecasting pipeline using Python and scikit-learn,
+          improving prediction accuracy through feature engineering.
+        </li>
+        <li>
+          <strong>Business Performance Dashboard:</strong>
+          Designed interactive Tableau dashboards to visualize KPIs and trends for stakeholders.
+        </li>
       </ul>
+    </section>
 
-    <h3>Strategic Business Manager</h3>
-    <h4>ASJ Pro Hub, Remote</h4>
-    <h5>August 2024 - Present</h5>
-      <ul>
-        <li>Designed structured experiments on email marketing across target customers</li>
-        <li>Independent computer service contractor</li>
-      </ul>
+    <section id="education" class="card">
+      <h2>Education</h2>
 
-    <h3>Accounts Payable Administrator</h3>
-    <h4>Anthem Properties Group Ltd.</h4>
-    <h5>October 2023 - April 2024</h5>
-      <ul>
-        <li>Managed large-scaled financial dataset with audit-level accuracy</li>
-        <li>Organized and verified supporting documents for audits and improved data integrity</li>
-        <li>Trained two junior members of our team</li>
+      <p>
+        <strong>Bachelor’s Degree — Accounting</strong><br>
+        Business-focused quantitative background with strong analytical foundations.
+      </p>
 
+      <p>
+        <strong>Ongoing Learning</strong><br>
+        Python, Data Science, Machine Learning, SQL, Statistics, Visualization
+      </p>
+    </section>
 
-  </body>
+    <section class="card">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:jain.shubh600@gmail.com">
+          jain.shubh600@gmail.com
+        </a>
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/sjain600" target="_blank" rel="noopener">
+          github.com/sjain600
+        </a>
+      </p>
+      <p>
+        Kaggle:
+        <a href="https://kaggle.com/sjain600" target="_blank" rel="noopener">
+          kaggle.com/sjain600
+        </a>
+      </p>
+    </section>
 
-  <footer>
-  <hr>
-  <p><a href="index.html">Back to my portal</a><p>
+    </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer wrap">
+    <small>© 2026 Shubham Jain</small>
   </footer>
 
+</body>
 </html>
