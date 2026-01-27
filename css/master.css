@@ -75,6 +75,10 @@ body::before{
   box-shadow: 0 0 0 1px rgba(0,0,0,0.2) inset;
 }
 
+.header-actions{ margin-left:auto; display:flex; gap:0.5rem; align-items:center; }
+.icon-btn{ background:transparent; color:var(--muted); border: none; padding:6px 8px; font-size:1rem; cursor:pointer; border-radius:6px; }
+.icon-btn:hover{ color:var(--text); background: rgba(255,255,255,0.02); }
+
 .hero { padding: 3.5rem 0; display:flex; align-items:center; justify-content:center; }
 .hero-inner { display:flex; gap:2.5rem; align-items:center; width:100%; }
 .hero-left { flex:0 0 220px; display:flex; justify-content:center; }
@@ -82,16 +86,12 @@ body::before{
 .avatar { width:200px; height:200px; object-fit:cover; border-radius:12px; border: 1px solid rgba(255,255,255,0.04); box-shadow: 0 10px 30px rgba(0,0,0,0.7); }
 
 h1 {
-  font-size: 2.6rem;
-  font-family: "Orbitron", sans-serif;
-  color: var(--text);
-  line-height: 1.05;
+  font-size: 3rem;
+  font-family: "Playfair Display", sans-serif;
+  color: var(--h1-purple);
+  letter-spacing: -0.01em;
   margin: 0 0 .6rem 0;
 }
-
-h1 .muted { color: var(--muted); font-weight: 500; font-size: .8em; }
-
-.lead { color: #c7cbd0; margin-top: .5rem; max-width: 680px; }
 
 h2 {
   color: var(--text);
