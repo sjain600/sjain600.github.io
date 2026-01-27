@@ -66,23 +66,95 @@ body::after{
   to   { background-position: 48px 48px, 48px 48px; }
 }
 
-  a {
-    color: #075AAB; /* set the text color to blue here */
-    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--wrap-padding);
+  padding-right: var(--wrap-padding);
+  position: relative;
+  z-index: 10; /* keep content above decorative layers */
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(10,10,16,0.55), rgba(10,10,16,0.25));
+  border-bottom: 1px solid rgba(255,255,255,0.02);
+}
+
+.header-inner, .site-header .wrap { display:flex; align-items:center; gap:1rem; height:64px; }
+.brand {
+  font-family: "Orbitron", sans-serif;
+  font-weight:700;
+  color: var(--text);
+  padding:6px 10px;
+  border-radius:8px;
+  background: linear-gradient(90deg, rgba(255,0,122,0.12), rgba(0,245,212,0.08));
+}
+
+.main-nav ul { list-style:none; display:flex; gap:1rem; margin:0; padding:0; align-items:center; }
+.main-nav a { color: var(--muted); text-decoration:none; padding:6px 8px; border-radius:6px; font-weight:600; }
+.main-nav a:hover { color: var(--text); background: rgba(255,255,255,0.02); }
+
+/* header right CTA area */
+.header-cta { margin-left: auto; }
+
+.hero { padding: 3.5rem 0; display:flex; align-items:center; justify-content:center; gap:2rem; }
+.hero-inner { display:flex; gap:2.5rem; align-items:center; width:100%; }
+.hero-left { flex:1; min-width: 260px; }
+.hero-right { width:260px; display:flex; justify-content:center; align-items:center; }
+.hero-avatar { width:220px; height:220px; object-fit:cover; border-radius:14px; border: 2px solid rgba(255,255,255,0.04); box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+
+h1 {
+  font-size: 2.6rem;
+  font-family: "Orbitron", sans-serif;
+  color: var(--text);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+h1 .muted { color: var(--muted); font-weight: 500; font-size: .8em; }
+
+/* lead paragraph */
+.lead { color: #c7cbd0; margin-top: .5rem; max-width: 680px; }
+
+h2 {
+    color: #1ABC9C;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    position: relative;
+   }
+
+  h2::after{
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    margin: 0.5rem auto 0;
+    background: #1ABC9C;
   }
 
-  a.button {
-    display:inline-block;
-    gap: 0.5rem;
-    padding: 0.6rem 1.2rem;
-    margin: 0.5rem;
-    border-radius: 999px;
-    border: 1px solid #3f4455;
-    background-color: #F39C12;
-    color: #ffffff;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s ease;
+
+a {
+  color: #075AAB; /* set the text color to blue here */
+  text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+}
+
+a.button {
+  display:inline-block;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 999px;
+  border: 1px solid #3f4455;
+  background-color: #F39C12;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
   }
 
   a.button:hover {
@@ -104,31 +176,7 @@ body::after{
     color: #D1D5DB;
   }
 
-  h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #9B59B6;
-    margin-bottom: 1rem;
-    margin-top: 3rem;
-   }
 
-  h2 {
-     /* set the text color of to #075AAB here */
-    /* set both the bottom margin and top margin to 2.5rem here */
-    color: #1ABC9C;
-    margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
-    position: relative;
-   }
-
-  h2::after{
-    content: "";
-    display: block;
-    width: 48px;
-    height: 4px;
-    margin: 0.5rem auto 0;
-    background: #1ABC9C;
-  }
 
   h3 {
 
