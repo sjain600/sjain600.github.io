@@ -122,26 +122,28 @@ h1 .muted { color: var(--muted); font-weight: 500; font-size: .8em; }
 .lead { color: #c7cbd0; margin-top: .5rem; max-width: 680px; }
 
 h2 {
-    color: #1ABC9C;
-    margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
-    position: relative;
+  color: var(--text);
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  position: relative;
    }
 
-  h2::after{
-    content: "";
-    display: block;
-    width: 48px;
-    height: 4px;
-    margin: 0.5rem auto 0;
-    background: #1ABC9C;
-  }
-
-
-a {
-  color: #075AAB; /* set the text color to blue here */
-  text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+h2::after{
+  content: "";
+  display: block;
+  width: 56px;
+  height: 4px;
+  border-radius:4px;
+  background: linear-gradient(90deg, var(--accent-magenta), var(--accent-teal));
+  margin-top:8px;
 }
+
+
+a { color: var(--accent-blue); }
+a:hover { text-decoration: underline; }
 
 a.button {
   display:inline-block;
@@ -157,11 +159,16 @@ a.button {
   transition: all 0.2s ease;
   }
 
-  a.button:hover {
-    background-color: #cf3f31; /* set the text color to red here */
-    transform: translateY(-3px);
-    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+a.button:hover {
+  background-color: #cf3f31; /* set the text color to red here */
+  transform: translateY(-3px);
+  text-decoration: none; /* This means we do not want hyperlinks to be underlined */
   }
+
+@media (prefers-reduced-motion: reduce) {
+  body::after { animation: none; }
+  .button { transition: none; transform: none; }
+}
 
 
   footer {
