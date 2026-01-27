@@ -154,7 +154,7 @@ h2::after {
 .meta{ color: var(--muted); margin-top:0.3rem; }
 
 .section-tech .chips{ display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:0.8rem; }
-.chip{ background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:10px 10px; border-radius:999px; color:var(--text); border:1px solid rgba(255,255,255,0.03); font-weight:600; }
+.chip{ background: linear-gradient(90deg, rgba(198,138,255,0.12)), rgba(198,138,255,0.04)); padding:10px 10px; border-radius:999px; color:var(--text); border:1px solid rgba(255,255,255,0.03); font-weight:600; }
 
 /* topics chips grid */
 .topic-list{ margin-top:0.8rem; display:flex; gap:0.6rem; flex-wrap:wrap; }
