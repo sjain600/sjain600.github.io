@@ -58,35 +58,43 @@
       </div>
     </section>
       
+    <!-- Selected work --> 
     <section id="projects" class="wrap section-projects">
       <h2>Selected work</h2>
-      <div class="card-list">
-        <!-- Repeat each project card -->
-        <article class="card project-card">
+      <div class="card-list" role="list">
+        <article class="card project-card" role="listitem">
           <div class="project-media" aria-hidden="true"></div>
           <div class="project-body">
-            <h3>Sales Forecasting</h3>
-            <p class="meta">Python • scikit-learn • T</p>
-            <p>Built a forecasting pipeline that reduced error by X% — automated feature engineering + model selection.</p>
-            <a class="button ghost" href="#">Read more</a>
+            <h3>Predicting Loan Payable | Playground SS5 Ep11</h3>
+            <p class="meta">Panda & NumPy, Scikit-learns, Seaborn & Matplotlib, Optuna, XGBoost</p>
+            <ul>
+              <li>Optuna study was conducted to find the best parameters for <code>XGBoost</code> model</li>
+              <li>Applied target encoding using the original dataset and the global mean of the train dataset./li>
+              <li>The train dataset was split using the OOF technique for better generalization and <code>StratifiedKFold</code> for addressing the imbalance target distribution./li>
+              <li>Improved model performance (AUC 0.92441 → 0.92622) through systematic feature engineering and validation</li>
+            </ul>
           </div>
         </article>
 
         <article class="card project-card">
           <div class="project-media" aria-hidden="true"></div>
           <div class="project-body">
-            <h3>Operational Dashboard</h3>
-            <p class="meta">Tableau • Data viz</p>
-            <p>Interactive dashboard that surfaced key KPIs and enabled faster decision making.</p>
-            <a class="button ghost" href="#">View dashboard</a>
+            <h3>Tableau Dashboard</h3>
+            <p class="meta">Tableau, Data visualization, Data Analysis and storytelling</p>
+            <p>Real estate</p>
+            <p>Instagram Users</p>
+            <!-- <a class="button ghost" href="#">View dashboard</a> -->      
           </div>
         </article>
       </div>
     </section>
 
-    <section id="tech" class="wrap section card section-tech">
-      <h2>Tech Stack</h2>
-      <div class="chips">
+   <!-- Tech stack: moved .card inside .wrap to match Selected work width & padding -->
+
+    <section id="tech" class="wrap section">
+      <div class="card">
+      <h2>Tech Tools and Skills</h2>
+        <div class="chips" aria-hidden="false">
         <span class="chip">Python</span>
         <span class="chip">SQL</span>
         <span class="chip">Pandas</span>
@@ -98,9 +106,9 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="wrap section card">
+    <section id="contact" class="wrap section">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:jain.shubh600@gmail.com">jain.shubh600@gmail.com</a></p>
+      <p>Email: <a class="email-link" href="mailto:jain.shubh600@gmail.com">jain.shubh600@gmail.com</a></p>
     </section>
  
     </main>
