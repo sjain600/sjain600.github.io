@@ -148,17 +148,8 @@ h2::after {
 .card{ background: var(--panel); padding:1rem; border-radius:12px; box-shadow: 0 8px 30px rgba(0,0,0,0.55); color: var(--text); }
 .card-list{ display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-top:1rem; }
 
-.post-card{ display:flex; gap:1rem; align-items:center; padding:1rem; }
-.post-media{ width:64px; height:64px; border-radius:8px; background: linear-gradient(180deg, rgba(81,98,255,0.06), rgba(255,0,122,0.04)); flex:0 0 64px; }
-.post-body h3{ margin:0; font-size:1.05rem; }
-.meta{ color: var(--muted); margin-top:0.3rem; }
-
 .section-tech .chips{ display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:0.8rem; }
 .chip{ background: linear-gradient(90deg, rgba(198,138,255,0.12)), rgba(198,138,255,0.04)); padding:10px 10px; border-radius:999px; color:var(--text); border:1px solid rgba(255,255,255,0.03); font-weight:600; }
-
-/* topics chips grid */
-.topic-list{ margin-top:0.8rem; display:flex; gap:0.6rem; flex-wrap:wrap; }
-.topic-chip{ background: var(--chip-bg); padding:10px 10px; border-radius:999px; color:var(--muted); border: 1px solid rgba(255,255,255,0.02); font-weight:600; }
 
 /* ---------- footer ---------- */
 .site-footer{ padding:2rem 0; color:var(--muted); text-align:center; }
