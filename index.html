@@ -92,19 +92,25 @@
 
    <!-- Tech stack: moved .card inside .wrap to match Selected work width & padding -->
 
-    <section id="tech" class="wrap section">
-      <div class="card">
-      <h2>Tech Tools and Skills</h2>
-        <div class="chips" aria-hidden="false">
-        <span class="chip">Python</span>
-        <span class="chip">SQL</span>
-        <span class="chip">Pandas</span>
-        <span class="chip">Scikit-learn</span>
-        <span class="chip">Tableau</span>
-        <span class="chip">HTML</span>
-        <span class="chip">CSS</span>
-      </div>
-    </section>
+    <!-- SECTION: TECH (moved <h2> OUTSIDE .card for consistency with Selected work) -->
+<section id="tech" class="wrap section section-tech">
+  <!-- SECTION HEADING - kept OUTSIDE the card to match Selected work -->
+  <h2>Tech Tools and Skills</h2>
+
+  <!-- CARD: chips remain inside a panel for visual grouping -->
+  <div class="card">
+    <div class="chips" aria-hidden="false">
+      <span class="chip">Python</span>
+      <span class="chip">SQL</span>
+      <span class="chip">Pandas</span>
+      <span class="chip">Scikit-learn</span>
+      <span class="chip">Tableau</span>
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+    </div>
+  </div>
+</section>
+
 
     <!-- Contact -->
     <section id="contact" class="wrap section">
