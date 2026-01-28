@@ -169,7 +169,7 @@ h2::after {
 }
 
 /* Project-specific body */
-.project-body{ padding: 0.15 0 0; }
+.project-body{ padding: 0.2rem 0 0.5; }
 .project-media{ height: 30px; background: rgba(255,255,255,0.02); border-radius: 8px; margin-bottom: 0.8rem; }
 
 /* ---------------------------
