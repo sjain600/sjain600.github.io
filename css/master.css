@@ -95,7 +95,7 @@ h2 {
   color: var(--text);
   font-family: "Playfair Display", serif; /* serif to match H1 style */
   font-size: 2.0rem;
-  margin: 2.0rem 0 1rem;
+  margin: 2.0rem 0 0.6rem;
   letter-spacing: 0.01em;
   position: relative;
 }
@@ -154,7 +154,7 @@ h2::after {
 .section{ margin-top:1rem; margin-bottom:2rem; }
 
 /* Generic card style used across sections */
-.card{ background: var(--panel); padding:1.2rem; border-radius:12px; box-shadow: 0 8px 30px rgba(0,0,0,0.55); color: var(--text); width:100%; }
+.card{ background: var(--panel); padding: 0.7rem 1.2rem; border-radius:12px; box-shadow: 0 8px 30px rgba(0,0,0,0.55); color: var(--text); width:100%; }
 
 /* Project card grid */
 .card-list{ display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-top:1rem; align-items: start;}
@@ -165,8 +165,8 @@ h2::after {
 }
 
 /* Project-specific body */
-.project-body{ padding: 0.4rem 0; }
-.project-media{ height: 40px; background: rgba(255,255,255,0.02); border-radius: 8px; margin-bottom: 0.8rem; }
+.project-body{ padding: 0.15 0 0; }
+.project-media{ height: 28px; background: rgba(255,255,255,0.02); border-radius: 8px; margin-bottom: 0.4rem; }
 
 /* ---------------------------
    Chips / tech stack
