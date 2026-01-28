@@ -151,10 +151,10 @@ h2::after {
    Cards & lists (CARD SYMMETRY FIX)
    - Ensure card elements inside .wrap fill same width & padding
    --------------------------- */
-.section{ margin-top:1rem; margin-bottom:2rem; }
+.section{ margin-top:1.2rem; margin-bottom:2.5rem; }
 
 /* Generic card style used across sections */
-.card{ background: var(--panel); padding: 0.7rem 1.2rem; border-radius:12px; box-shadow: 0 8px 30px rgba(0,0,0,0.55); color: var(--text); width:100%; }
+.card{ background: var(--panel); padding: 0.4rem 1.2rem; border-radius:12px; box-shadow: 0 8px 30px rgba(0,0,0,0.55); color: var(--text); width:100%; }
 .card h3, .project-body h3 {
   margin: 0.15rem 0 0.4rem; /* small top margin so h3 is snug under media */
   line-height: 1.1;
@@ -178,19 +178,19 @@ h2::after {
    --------------------------- */
 .section-tech > h2 {
   margin-top: 1.2rem;   /* matches other section headings */
-  margin-bottom: 0.6rem;/* small gap before the card below */
+  margin-bottom: 1rem;/* small gap before the card below */
 }
 
 .wrap > h2 + .card {
   margin-top: 0;        /* h2 bottom margin handles the gap; avoid double spacing */
-  padding-top: 0.9rem;  /* ensure the card has a slightly tighter top padding after the heading */
+  padding-top: 1.5rem;  /* ensure the card has a slightly tighter top padding after the heading */
 }
 
 .chips{ display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:0.6rem; }
 
 /* chip visual styling remains unchanged (copied/kept for context) */
 .chip{ background: linear-gradient(90deg, rgba(198,138,255,0.12)), rgba(198,138,255,0.04)); 
-      padding:10px 12px; 
+      padding:12px 12px; 
       border-radius:999px; 
       color:var(--text); 
       border:1px solid rgba(255,255,255,0.03); 
