@@ -176,11 +176,24 @@ h2::after {
    Chips / tech stack
    - Fixed the invalid linear-gradient syntax
    --------------------------- */
-.section-tech .chips{ display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:0.8rem; }
+.section-tech > h2 {
+  margin-top: 1.2rem;   /* matches other section headings */
+  margin-bottom: 0.6rem;/* small gap before the card below */
+}
+
+.wrap > h2 + .card {
+  margin-top: 0;        /* h2 bottom margin handles the gap; avoid double spacing */
+  padding-top: 0.9rem;  /* ensure the card has a slightly tighter top padding after the heading */
+}
+
+.chips{ display:flex; gap:0.6rem; flex-wrap:wrap; margin-top:0.6rem; }
+
+/* chip visual styling remains unchanged (copied/kept for context) */
 .chip{ background: linear-gradient(90deg, rgba(198,138,255,0.12)), rgba(198,138,255,0.04)); 
       padding:10px 12px; 
       border-radius:999px; 
-      color:var(--text); border:1px solid rgba(255,255,255,0.03); 
+      color:var(--text); 
+      border:1px solid rgba(255,255,255,0.03); 
       font-weight:600; }
 
 /* ---------------------------
