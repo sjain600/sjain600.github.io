@@ -81,7 +81,7 @@ body::before{
 .hero-inner { display:flex; gap:2.5rem; align-items:center; width:100%; }
 .hero-left { flex:0 0 220px; display:flex; justify-content:center; }
 .hero-right { flex:1; min-width: 300px; }
-.avatar { width:200px; height:200px; object-fit:cover; border-radius:12px; border: 1px solid rgba(255,255,255,0.04); box-shadow: 0 10px 30px rgba(0,0,0,0.7); }
+.avatar { width:250px; height:500px; object-fit:cover; border-radius:12px; border: 1px solid rgba(255,255,255,0.04); box-shadow: 0 10px 30px rgba(0,0,0,0.7); }
 
 h1 {
   font-size: 3rem;
