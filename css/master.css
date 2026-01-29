@@ -37,8 +37,8 @@ body::before{
   inset: 0;
   pointer-events: none;
   background: 
-    radial-gradient(circle at 12% 10%, rgba(198,138,255,0.06), transparent 10%),
-    radial-gradient(circle at 90% 85%, rgba(0,0,0,0.06), transparent 10%);
+    radial-gradient(circle at 12% 10%, rgba(198,138,255,0.07), transparent 10%),
+    radial-gradient(circle at 90% 85%, rgba(0,0,0,0.07), transparent 10%);
   z-index:0;
    }
 
@@ -52,6 +52,7 @@ body::before{
   z-index: 5; 
 }
 
+/* HEADER */
 .site-header {
   position: sticky;
   top: 0;
@@ -62,6 +63,7 @@ body::before{
 
 .header-inner { display:flex; align-items:center; gap:1rem; height:64px; }
 .brand { font-weight:600; color: var(--text); margin-right: 1rem; font-size:1.05rem; background: linear-gradient(90deg, rgba(255,0,122,0.12), rgba(0,245,212,0.08)); }
+.main-nav {margin: 0 auto;}
 .main-nav ul{ list-style:none; display:flex; gap:1rem; margin:0; padding:0; align-items:center; }
 .main-nav a{ color: var(--muted); text-decoration:none; padding:6px 8px; border-radius:6px; font-weight:600; }
 .main-nav a:hover { color: var(--text); background: rgba(255,255,255,0.02); }
@@ -216,6 +218,92 @@ h2::after {
 
 /* fallback for other links inside cards to not be invisible */
 .card a{ color: var(--text); }
+
+/* FLOATING HAMBURGER MENU (bottom-right) */
+.floating-menu {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* circular hamburger */
+.hamburger {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(198,138,255,0.12);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background: var(--h1-purple);
+  transition: all 0.3s ease;
+  display:block;
+}
+.hamburger:hover {
+  background: rgba(198,138,255,0.22);
+  box-shadow: 0 0 18px rgba(198,138,255,0.35);
+}
+
+/* hidden nav panel */
+.floating-nav {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: var(--panel);
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px) scale(0.96);
+  transition: all 0.22s cubic-bezier(.2,.9,.2,1);
+}
+
+.floating-nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: all 0.15s ease;
+}
+.floating-nav a:hover {
+  background: rgba(198,138,255,0.08);
+  color: var(--h1-purple);
+}
+
+/* open state styles */
+.floating-nav.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+.hamburger.open span:first-child {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+.hamburger.open span:last-child {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
 
 /* ---------- footer ---------- */
 .site-footer{ padding:2rem 0; color:var(--muted); text-align:center; }
