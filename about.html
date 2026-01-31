@@ -51,4 +51,57 @@
 
     </main>
 
-  </body>
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer wrap">
+    <small>© 2026 Shubham Jain</small>
+  </footer>
+
+  <!-- Floating Hamburger Menu (bottom-right) - same component as index -->
+  <div class="floating-menu" aria-hidden="false">
+    <button class="hamburger" aria-label="Open menu" type="button">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="floating-nav" aria-label="Quick links">
+      <a href="resume.html">Resume</a>
+      <a href="https://github.com/sjain600" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://kaggle.com/sjain600" target="_blank" rel="noopener">Kaggle</a>
+    </nav>
+  </div>
+
+  <script>
+    // Floating hamburger toggle (same logic as index.html)
+    (function(){
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.floating-nav');
+
+      if (!hamburger || !menu) return;
+
+      hamburger.addEventListener('click', () => {
+        menu.classList.toggle('open');
+        hamburger.classList.toggle('open');
+      });
+
+      // close on outside click
+      document.addEventListener('click', (e) => {
+        if (!menu.classList.contains('open')) return;
+        const withinMenu = e.target.closest('.floating-menu');
+        if (!withinMenu) {
+          menu.classList.remove('open');
+          hamburger.classList.remove('open');
+        }
+      });
+
+      // close with Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          menu.classList.remove('open');
+          hamburger.classList.remove('open');
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
