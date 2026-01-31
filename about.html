@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Shubham Jain — About Me</title>
@@ -11,7 +11,7 @@
   <!-- Main site CSS -->
   <link rel="stylesheet" href="css/master.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  </head>
+</head>
 
 <body>
   <header class="site-header">
@@ -19,6 +19,8 @@
       <nav class="main-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#tech">Tools</a></li>
         </ul>
       </nav>
       <div class="header-actions" aria-hidden="true"></div>
@@ -28,9 +30,17 @@
 
   <main role="main">
   
-      <section class="wrap"
-        <h2>About me</h2>
-        <div class="card">
+      <section class="wrap" aria-labelledby="about-title">
+        <div class="hero" style="padding: 2.5rem 0;">
+        <div class="hero-inner" style="align-items:flex-start;">
+          <!-- left column: avatar -->
+          <div class="hero-left" style="flex:0 0 220px;">
+            <img class="avatar" src="images/headshot.jpg" alt="Shubham Jain portrait" style="width:220px;height:220px;">
+          </div>
+          <div class="hero-right" style="flex:1;">
+            <h1 id="about-title">About me</h1>
+
+            <div class="card" style="margin-top: 1rem;">
         
         <p>My journey started in July 2024 when I was interested in learning about AI tools that I could use for my dad's business. I was browsing around various YouTube videos
           about AI tools, prompt engineering, and SEO. Through YouTube's recommendation system, I came across a video about building AI tools from scratch. What caught
@@ -47,6 +57,8 @@
         
         <p>Now, I’m diving deep into machine learning, SQL, and data visualization—bridging the gap  between raw data and real-world decisions. 
           Because to me, data isn’t just numbers; it’s a story waiting to be told.</p>
+            </div>
+          </div>
       </section>
 
     </main>
