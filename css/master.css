@@ -162,6 +162,86 @@ h2::after {
   line-height: 1.1;
 }
 
+/* --- Blog Section Styles --- */
+
+.section-blog {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.more-link {
+  font-size: 0.9rem;
+  color: #888;
+  text-decoration: none;
+}
+
+.more-link:hover {
+  color: #fff;
+}
+
+/* The List Container */
+.blog-list {
+  background-color: #1a1a1a; /* Dark background matching screenshot */
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+/* Individual Blog Item */
+.blog-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.2s ease;
+}
+
+.blog-item:last-child {
+  border-bottom: none;
+}
+
+.blog-item:hover {
+  background-color: #252525; /* Slight highlight on hover */
+}
+
+/* The Icon */
+.blog-icon {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  margin-top: 2px;
+}
+
+/* Text Content */
+.blog-content h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.blog-meta {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: #888;
+}
+
 /* Project card grid */
 .card-list{ display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-top:1rem; align-items: start;}
 
