@@ -245,6 +245,29 @@ h2::after {
 /* Project card grid */
 .card-list{ display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-top:1rem; align-items: start;}
 
+.project-header {
+  margin-bottom: 1rem;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-features {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.project-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
 /* ensure consistent two-column layout on wide screens */
 @media (min-width: 1100px){
   .card-list{ grid-template-columns: repeat(2, 1fr); gap:1.5rem; }
